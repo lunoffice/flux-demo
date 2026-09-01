@@ -19,11 +19,13 @@ An interactive browser-based showcase of **Flux**, an administrative and financi
 
 ## 🚀 Live Demo & Getting Started
 
+🌐 **Live Demo Online**: [https://lunoffice.github.io/flux-demo/](https://lunoffice.github.io/flux-demo/)
+
 ### Local Development
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/flux-demo.git
+   git clone https://github.com/lunoffice/flux-demo.git
    cd flux-demo
    ```
 
