@@ -14,21 +14,24 @@ export function AppShell() {
   const { refreshAnni } = useEsercizio();
 
   return (
-    <div className="app-shell flex h-screen w-screen overflow-hidden text-slate-900 font-sans select-none">
+    <div className="app-shell flex flex-col h-screen w-screen overflow-hidden text-slate-900 font-sans select-none">
       <a href="#main-content" className="skip-link">
         Skip to main content
       </a>
 
-      <Sidebar onBackup={() => setShowBackup(true)} />
+      <TopBar onOpenBackup={() => setShowBackup(true)} />
 
-      <div className="app-shell-main flex-1 flex flex-col min-w-0 h-full overflow-hidden">
-        <TopBar onOpenBackup={() => setShowBackup(true)} />
-        <main
-          id="main-content"
-          className="app-shell-content flex-1 flex flex-col min-h-0 overflow-hidden p-4 md:p-6 focus:outline-none"
-        >
-          <Outlet />
-        </main>
+      <div className="flex flex-1 min-h-0 w-full overflow-hidden">
+        <Sidebar onBackup={() => setShowBackup(true)} />
+
+        <div className="app-shell-main flex-1 flex flex-col min-w-0 h-full overflow-hidden">
+          <main
+            id="main-content"
+            className="app-shell-content flex-1 flex flex-col min-h-0 overflow-hidden p-4 md:p-6 focus:outline-none"
+          >
+            <Outlet />
+          </main>
+        </div>
       </div>
 
       <DemoNoticeModal />

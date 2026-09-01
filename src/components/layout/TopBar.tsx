@@ -11,8 +11,7 @@ export function TopBar({ onOpenBackup }: TopBarProps) {
   return (
     <header className="h-12 border-b border-white/10 bg-[#16171c] px-4 flex items-center justify-between shrink-0 select-none">
       <div className="flex items-center gap-2.5">
-        <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-[11px] font-bold bg-emerald-500/15 text-emerald-400 border border-emerald-500/30">
-          <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+        <span className="inline-flex items-center px-2.5 py-1 rounded-md text-[11px] font-semibold bg-white text-zinc-900 shadow-sm">
           Interactive Web Demo
         </span>
         <span className="text-xs text-zinc-400 hidden sm:inline font-medium">
